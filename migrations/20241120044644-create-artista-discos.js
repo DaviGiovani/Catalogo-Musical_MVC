@@ -12,7 +12,8 @@ module.exports = {
       ArtistaId: {
         type: Sequelize.INTEGER,
         references: {
-          key: 'id',
+          model: 'Artistas', // Referencia a tabela 'Artistas'
+          key: 'id',         // A coluna 'id' da tabela referenciada
         },
         onUpdate: 'CASCADE',
         onDelete: 'CASCADE',
@@ -20,8 +21,8 @@ module.exports = {
       DiscoId: {
         type: Sequelize.INTEGER,
         references: {
-          model: 'Discos',
-          key: 'id',
+          model: 'Discos',   // Referencia a tabela 'Discos'
+          key: 'id',         // A coluna 'id' da tabela referenciada
         },
         onUpdate: 'CASCADE',
         onDelete: 'CASCADE',
