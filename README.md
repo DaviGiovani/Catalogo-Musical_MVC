@@ -62,7 +62,7 @@ Certifique-se de ter os seguintes programas instalados em sua máquina:
 3. **Configure o Banco de Dados:**
 - **Crie um banco de dados no PostgreSQL**:
    ```sql
-   CREATE DATABASE music-catalog;
+   CREATE DATABASE music_catalog;
 - **Configure as crendenciais do banco no arquivo .env**:
   ```env
   DB_HOST=localhost
